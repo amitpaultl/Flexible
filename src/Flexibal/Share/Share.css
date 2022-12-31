@@ -1,0 +1,53 @@
+/* header top */
+.menu-top {
+    padding: 30px 0px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon {
+    font-size: 21px;
+    margin: 0 11px;
+    padding: 5px;
+}
+
+.icon a:hover {
+    color: rgb(255, 112, 4);
+}
+.icon a {
+    color: #000;
+}
+
+.menu-area{
+    background: rgb(47, 51, 58);
+}
+
+.menu-color a:hover {
+    color: rgb(255, 112, 4);
+}
+
+.menu-color a {
+    color: #fff;
+    font-weight: 600;
+    margin: 0 6px;
+}
+
+.navbar-toggler{
+    color: rgb(255, 112, 4) !important;
+}
+
+button.navbar-toggler {
+    background: white;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: rgb(255, 112, 4) !important;
+}
