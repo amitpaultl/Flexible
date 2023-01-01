@@ -1,9 +1,44 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { FcGoogle, } from "react-icons/fc";
 import { GrFacebook } from "react-icons/gr";
 import './SingUp.css'
+import { AuthProvider } from '../../Context/AuthContext';
+import { toast } from 'react-hot-toast';
+import Swal from 'sweetalert2';
+import HomeLoading from '../../Utility/Loading/HomeLoading/HomeLoading';
 const ForgetPassword = () => {
+    const {resetPassword,loading, setLoading,} = useContext(AuthProvider)
+
+        // loading
+        if (loading) {
+            return <HomeLoading></HomeLoading>
+        }
+
+    // reset password 
+    const handelSubmit = (e)=>{
+        e.preventDefault()
+        const email = e.target.email.value
+         resetPassword(email)
+         .then(() => {
+            // Password reset email sent!
+            // ..
+            setLoading(false)
+            
+            Swal.fire({
+                title: "Success",
+                text: "Please check your email",
+                icon: "success",
+                confirmButtonText: "OK",
+              });
+          })
+          .catch((error) => {
+            setLoading(false)
+            toast.error('This email is not used')
+            // ..
+          });
+    }
+
     return (
         <div>
             <div className="login-3 tab-box">
@@ -29,7 +64,7 @@ const ForgetPassword = () => {
                                 <div className="details">
                                     
                                     <h3>Recover Your Password</h3>
-                                    <form action="#" method="GET">
+                                    <form onSubmit={handelSubmit}>
                                         
                                         <div className="form-group form-box">
                                             <input type="email" name="email" className="form-control" placeholder="Email Address" aria-label="Email Address" />

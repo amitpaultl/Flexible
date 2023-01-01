@@ -221,9 +221,8 @@
 
 a.accountType {
     color: #fff;
-    font-weight: 800;
     font-size: 19px;
-    background: #ffa202;
+    background: #010101;
     padding: 5px 15px;
     border-radius: 6px;
     text-align: center;
@@ -235,3 +234,10 @@ a.accountType:hover{
     background: #fefefe;
     color: #040404;
 }
+
+.visible-password {
+    position: absolute;
+    right: 25px;
+    top: 14px;
+}
+
