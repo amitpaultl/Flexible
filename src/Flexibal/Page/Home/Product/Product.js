@@ -1,0 +1,263 @@
+import React, { useState } from 'react';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+import SectionTitle from '../../../Componte/SectionTitle/SectionTitle';
+import './Product.css'
+import { CiHeart } from "react-icons/ci";
+import { MdOutlineViewInAr ,MdCropRotate} from "react-icons/md";
+import { AiTwotoneStar } from "react-icons/ai";
+import product1 from '../../../Componte/Assarts/Product/75 (1).jfif'
+import product2 from '../../../Componte/Assarts/Product/75 (2).jfif'
+
+const Product = () => {
+    const [key, setKey] = useState('home');
+    return (
+        <div className='container'>
+            <SectionTitle title={'Our Products'} ditties={'Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore'}></SectionTitle>
+            <div className="tab-area">
+
+                <Tabs
+                    id="controlled-tab-example"
+                    activeKey={key}
+                    onSelect={(k) => setKey(k)}
+                    className="mb-3"
+                >
+                    <Tab eventKey="home" title="Home">
+                        <div className="row">
+                            <div className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px" data-aos="fade-up" data-aos-delay="400">
+
+                                <div className="product">
+                                    <div className="thumb">
+                                        <a href="single-product.html" className="image">
+                                            <img src={product1} alt="Product" />
+                                            <img className="hover-image" src={product2} alt="Product" />
+                                        </a>
+                                        <span className="badges">
+                                            <span className="sale">-10%</span>
+                                            <span className="new">New</span>
+                                        </span>
+                                        <div className="actions">
+                                            <a href="wishlist.html" className="action wishlist" title="Wishlist"><CiHeart></CiHeart></a>
+                                            
+                                            <a href="compare.html" className="action compare" title="Compare"><MdOutlineViewInAr></MdOutlineViewInAr></a>
+                                            <a href="compare.html" className="action compare" title="Compare"><MdCropRotate></MdCropRotate></a>
+                                        </div>
+                                        <button title="Add To Cart" className=" add-to-cart">Add
+                                            To Cart</button>
+                                    </div>
+                                    <div className="content">
+                                        <span className="ratings">
+                                            <span className="rating-wrap">
+                                                <span className="star" >
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                </span>
+                                            </span>
+                                            <span className="rating-num">( 4 Review )</span>
+                                        </span>
+                                        <h5 className="title"><a href="single-product.html">Ardene Microfiber
+                                            Tights</a>
+                                        </h5>
+                                        <span className="price">
+                                            <span className="new">$38.50</span>
+                                            <span className="old">$48.50</span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px" data-aos="fade-up" data-aos-delay="400">
+
+                                <div className="product">
+                                    <div className="thumb">
+                                        <a href="single-product.html" className="image">
+                                            <img src={product1} alt="Product" />
+                                            <img className="hover-image" src={product2} alt="Product" />
+                                        </a>
+                                        <span className="badges">
+                                            <span className="sale">-10%</span>
+                                            <span className="new">New</span>
+                                        </span>
+                                        <div className="actions">
+                                            <a href="wishlist.html" className="action wishlist" title="Wishlist"><CiHeart></CiHeart></a>
+                                            
+                                            <a href="compare.html" className="action compare" title="Compare"><MdOutlineViewInAr></MdOutlineViewInAr></a>
+                                            <a href="compare.html" className="action compare" title="Compare"><MdCropRotate></MdCropRotate></a>
+                                        </div>
+                                        <button title="Add To Cart" className=" add-to-cart">Add
+                                            To Cart</button>
+                                    </div>
+                                    <div className="content">
+                                        <span className="ratings">
+                                            <span className="rating-wrap">
+                                                <span className="star" >
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                </span>
+                                            </span>
+                                            <span className="rating-num">( 4 Review )</span>
+                                        </span>
+                                        <h5 className="title"><a href="single-product.html">Ardene Microfiber
+                                            Tights</a>
+                                        </h5>
+                                        <span className="price">
+                                            <span className="new">$38.50</span>
+                                            <span className="old">$48.50</span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px" data-aos="fade-up" data-aos-delay="400">
+
+                                <div className="product">
+                                    <div className="thumb">
+                                        <a href="single-product.html" className="image">
+                                            <img src={product1} alt="Product" />
+                                            <img className="hover-image" src={product2} alt="Product" />
+                                        </a>
+                                        <span className="badges">
+                                            <span className="sale">-10%</span>
+                                            <span className="new">New</span>
+                                        </span>
+                                        <div className="actions">
+                                            <a href="wishlist.html" className="action wishlist" title="Wishlist"><CiHeart></CiHeart></a>
+                                            
+                                            <a href="compare.html" className="action compare" title="Compare"><MdOutlineViewInAr></MdOutlineViewInAr></a>
+                                            <a href="compare.html" className="action compare" title="Compare"><MdCropRotate></MdCropRotate></a>
+                                        </div>
+                                        <button title="Add To Cart" className=" add-to-cart">Add
+                                            To Cart</button>
+                                    </div>
+                                    <div className="content">
+                                        <span className="ratings">
+                                            <span className="rating-wrap">
+                                                <span className="star" >
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                </span>
+                                            </span>
+                                            <span className="rating-num">( 4 Review )</span>
+                                        </span>
+                                        <h5 className="title"><a href="single-product.html">Ardene Microfiber
+                                            Tights</a>
+                                        </h5>
+                                        <span className="price">
+                                            <span className="new">$38.50</span>
+                                            <span className="old">$48.50</span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px" data-aos="fade-up" data-aos-delay="400">
+
+                                <div className="product">
+                                    <div className="thumb">
+                                        <a href="single-product.html" className="image">
+                                            <img src={product1} alt="Product" />
+                                            <img className="hover-image" src={product2} alt="Product" />
+                                        </a>
+                                        <span className="badges">
+                                            <span className="sale">-10%</span>
+                                            <span className="new">New</span>
+                                        </span>
+                                        <div className="actions">
+                                            <a href="wishlist.html" className="action wishlist" title="Wishlist"><CiHeart></CiHeart></a>
+                                            
+                                            <a href="compare.html" className="action compare" title="Compare"><MdOutlineViewInAr></MdOutlineViewInAr></a>
+                                            <a href="compare.html" className="action compare" title="Compare"><MdCropRotate></MdCropRotate></a>
+                                        </div>
+                                        <button title="Add To Cart" className=" add-to-cart">Add
+                                            To Cart</button>
+                                    </div>
+                                    <div className="content">
+                                        <span className="ratings">
+                                            <span className="rating-wrap">
+                                                <span className="star" >
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                </span>
+                                            </span>
+                                            <span className="rating-num">( 4 Review )</span>
+                                        </span>
+                                        <h5 className="title"><a href="single-product.html">Ardene Microfiber
+                                            Tights</a>
+                                        </h5>
+                                        <span className="price">
+                                            <span className="new">$38.50</span>
+                                            <span className="old">$48.50</span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px" data-aos="fade-up" data-aos-delay="400">
+
+                                <div className="product">
+                                    <div className="thumb">
+                                        <a href="single-product.html" className="image">
+                                            <img src={product1} alt="Product" />
+                                            <img className="hover-image" src={product2} alt="Product" />
+                                        </a>
+                                        <span className="badges">
+                                            <span className="sale">-10%</span>
+                                            <span className="new">New</span>
+                                        </span>
+                                        <div className="actions">
+                                            <a href="wishlist.html" className="action wishlist" title="Wishlist"><CiHeart></CiHeart></a>
+                                            
+                                            <a href="compare.html" className="action compare" title="Compare"><MdOutlineViewInAr></MdOutlineViewInAr></a>
+                                            <a href="compare.html" className="action compare" title="Compare"><MdCropRotate></MdCropRotate></a>
+                                        </div>
+                                        <button title="Add To Cart" className=" add-to-cart">Add
+                                            To Cart</button>
+                                    </div>
+                                    <div className="content">
+                                        <span className="ratings">
+                                            <span className="rating-wrap">
+                                                <span className="star" >
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                    <AiTwotoneStar></AiTwotoneStar>
+                                                </span>
+                                            </span>
+                                            <span className="rating-num">( 4 Review )</span>
+                                        </span>
+                                        <h5 className="title"><a href="single-product.html">Ardene Microfiber
+                                            Tights</a>
+                                        </h5>
+                                        <span className="price">
+                                            <span className="new">$38.50</span>
+                                            <span className="old">$48.50</span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                    </Tab>
+                    <Tab eventKey="profile" title="Profile"> llllllll
+
+                    </Tab>
+                    <Tab eventKey="contact" title="Contact" >
+                        ggkirl
+                    </Tab>
+                </Tabs>
+            </div>
+        </div>
+    );
+};
+
+export default Product;

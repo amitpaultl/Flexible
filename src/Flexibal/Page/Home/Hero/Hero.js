@@ -1,69 +1,77 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import slider1 from '../../../Componte/Assarts/Image/slider-1.png'
+import slider2 from '../../../Componte/Assarts/Image/slider-2.png'
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper";
 
+import './Hero.css'
 // Import Swiper styles
 import 'swiper/css';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
-        <div  className="container">
-            <Swiper
-                spaceBetween={50}
-                slidesPerView={1}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
-            >
-                <div >
+        <div className="slider-part">
 
-                    <SwiperSlide>
-                        <div className="row">
-                            <div className="col-md-6">
-                                <div className="img-area">
-                                    <img src="https://images.velog.io/images/ehdtn6288/post/e2e9c0e3-abb2-4bb2-b92c-b1000c865dc7/IMG_6744.jpg" alt="" />
-                                </div>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="hero-text">
-                                    <h5>Bangladesh</h5>
-                                    <p>Hello</p>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="row">
-                            <div className="col-md-6">
-                                <div className="img-area">
-                                    <img src="https://images.velog.io/images/ehdtn6288/post/e2e9c0e3-abb2-4bb2-b92c-b1000c865dc7/IMG_6744.jpg" alt="" />
-                                </div>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="hero-text">
-                                    <h5>Bangladesh</h5>
-                                    <p>Hello</p>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="row">
-                            <div className="col-md-6">
-                                <div className="img-area">
-                                    <img src="https://images.velog.io/images/ehdtn6288/post/e2e9c0e3-abb2-4bb2-b92c-b1000c865dc7/IMG_6744.jpg" alt="" />
-                                </div>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="hero-text">
-                                    <h5>Bangladesh</h5>
-                                    <p>Hello</p>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                </div>
-                
+            <div className="container">
+                <Swiper
 
-            </Swiper>
+                    cssMode={true}
+                    navigation={true}
+                    pagination={true}
+                    mousewheel={true}
+                    keyboard={true}
+                    // autoplay={{
+                    //     delay: 2500,
+                    //     disableOnInteraction: false,
+                    //   }}
+                    modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
+                    className="mySwiper"
+
+
+                >
+                    <div >
+
+                        <SwiperSlide>
+                            <div className="row align-items-center">
+                                <div className="col-md-6">
+                                    <div className="hero-text">
+                                        <div className="sc-jifHHV enBukJ slide-content"><h4 className="sc-gHfsNP ckkyHR">New Products</h4><h2 className="sc-dkAqVg hMBHNl">Flexible Chair</h2><p>Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna</p><Link color="white" className="sc-eFuaqX cBTZnj mt-4 mt-md-5" to={'/'}>Shop Now</Link></div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="img-area">
+                                        <img src={slider1} alt="" className='sliderImg' />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="row align-items-center">
+
+                                <div className="col-md-6">
+                                    <div className="hero-text">
+                                        <div className="sc-jifHHV enBukJ slide-content"><h4 className="sc-gHfsNP ckkyHR">New Products</h4><h2 className="sc-dkAqVg hMBHNl">Creative Sofa</h2><p>Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna</p><Link color="white" className="sc-eFuaqX cBTZnj mt-4 mt-md-5" to={'/'}>Shop Now</Link></div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="img-area">
+                                        <img src={slider2} alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                    </div>
+
+
+                </Swiper>
+            </div>
         </div>
+
     );
 };
 

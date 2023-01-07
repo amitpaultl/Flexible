@@ -1,0 +1,294 @@
+.tab-area .nav{
+    justify-content: center;
+}
+
+.tab-area .nav-tabs{
+    border: none;
+}
+
+.tab-area .nav-tabs .nav-item.show .nav-link, .tab-area .nav-tabs .nav-link.active{
+    color: rgb(255, 112, 4);
+    border: none;
+}
+
+.tab-area .nav-tabs .nav-link{
+    border: none;
+    color: black;
+    font-size: 22px;
+    transition: all 0.4s ease 0s;
+    font-weight: 600;
+}
+
+.tab-area .nav-tabs .nav-link:hover{
+    color: rgb(255, 112, 4);
+}
+
+
+/* product  */
+
+.product {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.product .thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.product .thumb .image {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.product .thumb .image img {
+    z-index: 1;
+    max-width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+
+.product .thumb .image img {
+    z-index: 1;
+    max-width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+
+.product .thumb .image img.hover-image {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.product .thumb .badges {
+    position: absolute;
+    z-index: 8;
+    top: 18px;
+    left: -2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.product .thumb .badges span.sale {
+    background: linear-gradient(-155deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+}
+
+.product .thumb .badges span.new {
+    background-color: #000000;
+}
+
+.product .thumb .badges span + span {
+    margin-top: 10px;
+}
+
+.product .thumb .actions {
+    position: absolute;
+    z-index: 9;
+    top: 18px;
+    right: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.product .thumb .actions .action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.product .thumb .actions .action::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(155deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+    z-index: -1;
+    -webkit-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+}
+
+.product .thumb .add-to-cart {
+    display: block;
+    width: 60%;
+    height: 50px;
+    line-height: 45px;
+    background: linear-gradient(-155deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+    text-align: center;
+    border: 0;
+    border-radius: 30px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    margin: auto;
+    font-weight: 600;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    color: #fff;
+    opacity: 0;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.product .thumb .add-to-cart::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(155deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+    z-index: -1;
+    -webkit-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+}
+
+.product .content {
+    position: relative;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0px 0px 0px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    background-color: #fff;
+}
+
+.product .content .ratings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+
+.product .content .title {
+    font-size: 16px;
+    margin: 10px 0 10px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.product .content .title a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-size: 16px;
+}
+
+.product .content .price {
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1;
+}
+
+.product .content .price span.new {
+    color: #1d1d1d;
+    font-weight: 600;
+}
+
+.product .content .price span.old {
+    
+    margin-left: 10px;
+    text-decoration: line-through;
+    color: #9f9e9e;
+}
+
+span.badges span {
+    padding: 0 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.product:hover .thumb .image img.hover-image {
+    opacity: 1;
+}
+
+.product .thumb .image img.hover-image {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.product:hover .thumb .add-to-cart {
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.product .thumb .actions .action:hover {
+    background: linear-gradient(-155deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+    color: #fff;
+}
+
+.product .thumb .actions .action.compare {
+    visibility: hidden;
+}
+
+.product:hover .thumb .actions .action.compare {
+    visibility: visible;
+}
+
+.product .content .ratings span.star {
+    color: orange;
+    margin-right: 10px;
+}

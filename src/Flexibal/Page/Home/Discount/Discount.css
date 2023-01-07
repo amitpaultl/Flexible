@@ -1,0 +1,78 @@
+.deal-margin{
+    margin: 100px 0;
+}
+
+.deal-wrapper .category {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin: 0 0 12px;
+    color: #fb5d5d;
+}
+
+.deal-bg {
+    
+    background-color: #e7e7e7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../Componte/Assarts/Image/deal-bg.webp');
+}
+
+.deal-wrapper .title {
+    font-size: 36px;
+    color: #464444;
+    margin: 0;
+}
+
+.deal-wrapper .deal-timing {
+    margin: 10px 0 32px 0;
+}
+
+span.category {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin: 0 0 12px;
+    color: #fb5d5d;
+    text-transform: uppercase;
+}
+
+.count-down {
+    display: flex;
+    justify-content: center;
+}
+
+span.cdown p {
+    font-size: 22px;
+}
+
+span.cdown-1 {
+    font-size: 37px;
+    font-weight: 800;
+}
+
+span.cdown {margin: 0 11px;}
+
+.btn-hover-dark {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgb(255, 112, 4);
+    box-shadow: none;
+    display: inline-block;
+    padding: 12px 29px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Raleway;
+    font-weight: 600;
+    transition: all 0.4s ease 0s;
+}
+
+.btn-hover-dark:hover {
+    background: black;
+    color: rgb(255, 112, 4); ;
+}
+
+.deal-image {
+    margin-top: 80px;
+}

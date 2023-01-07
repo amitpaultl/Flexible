@@ -1,0 +1,20 @@
+.section-title-area h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.section-title-area {
+    text-align: center;
+    color: rgb(71, 71, 71);
+    font-size: 20px;
+    padding: 40px 0;
+}
+
+.section-title-area p {
+    width: 538px;
+    margin: auto;
+}
+
+
+
