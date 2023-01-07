@@ -1,0 +1,61 @@
+.testimonials .testi-inner {
+    padding: 60px 40px;
+    -webkit-box-shadow: 0px 30px 64px 0px rgb(0 0 0 / 5%);
+    box-shadow: 0px 30px 64px 0px rgb(0 0 0 / 5%);
+}
+
+.testimonials .reating-wrap {
+    line-height: 1;
+    margin: 0 0 20px;
+}
+
+.testimonials .reating-wrap svg {
+    color: #ffde00;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.testimonials .testi-content p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #818790;
+    font-style: italic;
+
+}
+
+.testimonials .testi-inner .testi-author {
+    line-height: 1;
+    margin: 40px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.testimonials .testi-inner .testi-author .author-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonials .testi-inner .testi-author .author-name {
+    margin-left: 25px;
+}
+
+.testimonials .testi-inner .testi-author .author-name .name {
+    color: #39393a;
+    font-size: 18px;
+    margin: 0 0 3px;
+}
+
+.testimonials .testi-inner .testi-author .author-name .title {
+    color: #576477;
+    font-size: 14px;
+    font-weight: 300;
+}

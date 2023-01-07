@@ -1,12 +1,12 @@
-import React from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
 import SectionTitle from '../../../Componte/SectionTitle/SectionTitle';
 import './Testimonials.css'
-import { Swiper, SwiperSlide } from "swiper/react";
 import '../Hero/Hero.css'
-import "swiper/css/pagination";
+import "swiper/css";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
-
+import { AiFillStar } from "react-icons/ai";
+// import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper";
+import { Navigation } from "swiper";
 const Testimonials = () => {
     return (
         <div>
@@ -18,23 +18,167 @@ const Testimonials = () => {
                             <Swiper
                                 slidesPerView={3}
                                 spaceBetween={30}
-                                freeMode={true}
-                                pagination={{
-                                    clickable: true,
-                                }}
                                 navigation={true}
-                                modules={[Pagination, Navigation]}
+                                modules={[Navigation]}
                                 className="mySwiper"
                             >
-                                <SwiperSlide>Slide 1</SwiperSlide>
-                                <SwiperSlide>Slide 2</SwiperSlide>
-                                <SwiperSlide>Slide 3</SwiperSlide>
-                                <SwiperSlide>Slide 4</SwiperSlide>
-                                <SwiperSlide>Slide 5</SwiperSlide>
-                                <SwiperSlide>Slide 6</SwiperSlide>
-                                <SwiperSlide>Slide 7</SwiperSlide>
-                                <SwiperSlide>Slide 8</SwiperSlide>
-                                <SwiperSlide>Slide 9</SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="testi-inner">
+                                        <div className="reating-wrap">
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            
+                                        </div>
+                                        <div className="testi-content">
+                                            <p>Lorem ipsum dolor sit amet, consect adipisici elit, sed do eiusmod tempol incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniamfhq nostrud exercitation.
+                                            </p>
+                                        </div>
+                                        <div className="testi-author">
+                                            <div className="author-img">
+                                                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80" alt="" />
+                                            </div>
+                                            <div className="author-name">
+                                                <h4 className="name">Daisy Morgan</h4>
+                                                <span className="title">Happy Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="testi-inner">
+                                        <div className="reating-wrap">
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            
+                                        </div>
+                                        <div className="testi-content">
+                                            <p>Lorem ipsum dolor sit amet, consect adipisici elit, sed do eiusmod tempol incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniamfhq nostrud exercitation.
+                                            </p>
+                                        </div>
+                                        <div className="testi-author">
+                                            <div className="author-img">
+                                                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80" alt="" />
+                                            </div>
+                                            <div className="author-name">
+                                                <h4 className="name">Daisy Morgan</h4>
+                                                <span className="title">Happy Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="testi-inner">
+                                        <div className="reating-wrap">
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            
+                                        </div>
+                                        <div className="testi-content">
+                                            <p>Lorem ipsum dolor sit amet, consect adipisici elit, sed do eiusmod tempol incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniamfhq nostrud exercitation.
+                                            </p>
+                                        </div>
+                                        <div className="testi-author">
+                                            <div className="author-img">
+                                                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80" alt="" />
+                                            </div>
+                                            <div className="author-name">
+                                                <h4 className="name">Daisy Morgan</h4>
+                                                <span className="title">Happy Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="testi-inner">
+                                        <div className="reating-wrap">
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            
+                                        </div>
+                                        <div className="testi-content">
+                                            <p>Lorem ipsum dolor sit amet, consect adipisici elit, sed do eiusmod tempol incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniamfhq nostrud exercitation.
+                                            </p>
+                                        </div>
+                                        <div className="testi-author">
+                                            <div className="author-img">
+                                                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80" alt="" />
+                                            </div>
+                                            <div className="author-name">
+                                                <h4 className="name">Daisy Morgan</h4>
+                                                <span className="title">Happy Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="testi-inner">
+                                        <div className="reating-wrap">
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            
+                                        </div>
+                                        <div className="testi-content">
+                                            <p>Lorem ipsum dolor sit amet, consect adipisici elit, sed do eiusmod tempol incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniamfhq nostrud exercitation.
+                                            </p>
+                                        </div>
+                                        <div className="testi-author">
+                                            <div className="author-img">
+                                                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80" alt="" />
+                                            </div>
+                                            <div className="author-name">
+                                                <h4 className="name">Daisy Morgan</h4>
+                                                <span className="title">Happy Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="testi-inner">
+                                        <div className="reating-wrap">
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            <AiFillStar/>
+                                            
+                                        </div>
+                                        <div className="testi-content">
+                                            <p>Lorem ipsum dolor sit amet, consect adipisici elit, sed do eiusmod tempol incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniamfhq nostrud exercitation.
+                                            </p>
+                                        </div>
+                                        <div className="testi-author">
+                                            <div className="author-img">
+                                                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80" alt="" />
+                                            </div>
+                                            <div className="author-name">
+                                                <h4 className="name">Daisy Morgan</h4>
+                                                <span className="title">Happy Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                
                             </Swiper>
                         </div>
                     </div>

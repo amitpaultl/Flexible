@@ -18,16 +18,13 @@ const Hero = () => {
             <div className="container">
                 <Swiper
 
-                    cssMode={true}
                     navigation={true}
                     pagination={true}
-                    mousewheel={true}
-                    keyboard={true}
-                    // autoplay={{
-                    //     delay: 2500,
-                    //     disableOnInteraction: false,
-                    //   }}
-                    modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                      }}
+                    modules={[Autoplay, Navigation, Pagination]}
                     className="mySwiper"
 
 
