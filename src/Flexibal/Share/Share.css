@@ -59,3 +59,114 @@ button.navbar-toggler {
 .menu-color a.active {
     color: rgb(255, 112, 4) !important;
 }
+
+/* footer area  */
+
+img.footer-logo {
+    width: auto;
+    height: 40px;
+    margin-bottom: 17px;
+}
+
+.footer-area {
+    background-color: rgb(47, 51, 58);
+    color: rgb(255, 255, 255);
+    padding-top: 100px;
+}
+
+p.about-text {
+    font-size: 18px;
+}
+
+ul.link-follow {
+    padding: 0;
+    text-align: center;
+}
+
+ul.link-follow svg {
+    font-size: 21px;
+    margin: 0 11px;
+}
+
+ul.link-follow a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.link-follow a:hover {
+    color: rgb(255, 112, 4);
+}
+
+h4.footer-herading {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 17px;
+    color: #fff;
+}
+
+ul.align-items-center {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.align-items-center a {
+    text-decoration: none;
+    color: #afafaf;
+    font-size: 18px;
+    transition: 0.5s;
+    display: block;
+    padding: 3px 0;
+}
+
+ul.align-items-center li {
+    margin-bottom: 10px;
+}
+
+ul.align-items-center a:hover {
+    margin-right: 5px;
+    color: rgb(255, 112, 4);
+    font-size: 22px;
+    padding:  0;
+}
+
+p.address {font-size: 18px;}
+
+p.phone {
+    font-size: 18px;
+}
+
+p.phone a {
+    margin-left: 11px;
+    text-decoration: none;
+    color: #fff;
+}
+
+p.phone a:hover {
+    color: rgb(255, 112, 4);
+}
+
+p.copy-text {
+    font-size: 19px;
+    margin: 0;
+}
+
+.footer-bottom {
+    padding: 13px 0;
+    border: 2px solid #000;
+}
+
+a.company-name {
+    text-decoration: none;
+    color: #9c9c9c;
+}
+
+a.company-name:hover {
+    color: rgb(255, 112, 4);
+}
+
+.footer-top {
+    padding-bottom: 11px;
+}
+

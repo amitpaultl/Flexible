@@ -77,6 +77,8 @@ const Header = () => {
                                 <Nav className="m-auto text-center menu-color">
                                     <NavLink to={'/'}>Home</NavLink>
                                     <NavLink to={'/about'}>About</NavLink>
+                                    <NavLink to={'/product'}>Product</NavLink>
+                                    <NavLink to={'/singleProduct'}>Single Product</NavLink>
 
                                 </Nav>
 

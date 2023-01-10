@@ -7,7 +7,6 @@ import './Sponsor.css'
 import { Autoplay } from "swiper";
 
 import sponsor from '../../../Componte/Assarts/Image/sopnor1.png'
-import sponsor2 from '../../../Componte/Assarts/Image/sponsor.png'
 
 const Sponsor = () => {
     return (
@@ -31,7 +30,7 @@ const Sponsor = () => {
                                     <div className="sponsor-single">
 
                                         <Link>
-                                            <img src={sponsor2} alt="" />
+                                            <img src={sponsor} alt="" />
                                            
                                         </Link>
                                     </div>
@@ -44,7 +43,7 @@ const Sponsor = () => {
                                     <div className="sponsor-single">
 
                                         <Link>
-                                            <img src={sponsor2} alt="" />
+                                            <img src={sponsor} alt="" />
                                             
                                         </Link>
                                     </div>
@@ -57,7 +56,7 @@ const Sponsor = () => {
                                     <div className="sponsor-single">
 
                                         <Link>
-                                            <img src={sponsor2} alt="" />
+                                            <img src={sponsor} alt="" />
                                             
                                         </Link>
                                     </div>
@@ -70,7 +69,7 @@ const Sponsor = () => {
                                     <div className="sponsor-single">
 
                                         <Link>
-                                            <img src={sponsor2} alt="" />
+                                            <img src={sponsor} alt="" />
                                          
                                         </Link>
                                     </div>
@@ -83,7 +82,7 @@ const Sponsor = () => {
                                     <div className="sponsor-single">
 
                                         <Link>
-                                            <img src={sponsor2} alt="" />
+                                            <img src={sponsor} alt="" />
                                            
                                         </Link>
                                     </div>
@@ -96,7 +95,7 @@ const Sponsor = () => {
                                     <div className="sponsor-single">
 
                                         <Link>
-                                            <img src={sponsor2} alt="" />
+                                            <img src={sponsor} alt="" />
                                             
                                         </Link>
                                     </div>
