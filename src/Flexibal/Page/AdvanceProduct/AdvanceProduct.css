@@ -1,0 +1,122 @@
+.sidebar-widget-search {
+    margin: 0 0 40px;
+    position: relative;
+}
+
+ .sidebar-widget-search #widgets-searchbox .input-field {
+    border: 1px solid #cfcfcf;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    padding-left: 15px;
+    padding-right: 75px;
+    font-size: 16px;
+    font-style: italic;
+    color: #969696;
+    background-color: transparent;
+}
+
+ .sidebar-widget-search #widgets-searchbox .widgets-searchbox-btn {
+    background-color: transparent;
+    border: 0;
+    border-left: 1px solid #cfcfcf;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #cfcfcf;
+    line-height: 1;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.sidebar-widget-search #widgets-searchbox .widgets-searchbox-btn:hover {
+    color: #fb5d5d;
+}
+
+.shop-sidebar-wrap .sidebar-widget {
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 40px 30px 40px 30px;
+    line-height: 1;
+    margin: 0 0 40px;
+}
+
+.sidebar-widget h4 {
+    font-size: 18px;
+    display: block;
+    text-transform: capitalize;
+    position: relative;
+    font-weight: 600;
+    color: #525252;
+    margin: 0 0 20px;
+    padding-left: 20px;
+}
+
+.sidebar-widget-category ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-widget-category li a {
+    color: #737070;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.sidebar-widget-category li a:hover{
+    color: #fb5d5d;
+    margin-left: 5px;
+}
+
+.sidebar-widget-list.size ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-widget-list.size ul li {
+    font-size: 18px;
+    background: gray;
+    border-radius: 50%;
+}
+
+.sidebar-widget-list.size ul a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 16px 18px;
+}
+
+.sidebar-widget-list.size ul a:hover {
+    background: #fb5d5d;
+    border-radius: 50%;
+}
+
+.sidebar-widget-image {
+    padding: 40px 30px 40px 30px;
+    text-align: center;
+    background: #fafafa;
+}
+
+.item-disc h2 {
+    font-size: 29px;
+}
+
+a.shop-link {
+    font-size: 17px;
+    color: black;
+}

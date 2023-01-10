@@ -2,7 +2,7 @@ import React from 'react';
 import { CiHeart } from "react-icons/ci";
 import { MdOutlineViewInAr, MdCropRotate } from "react-icons/md";
 import { AiTwotoneStar } from "react-icons/ai";
-import { BsFillGrid3X3GapFill, BsListUl, IconName } from "react-icons/bs";
+import { BsFillGrid3X3GapFill, BsListUl, BsSearch, IconName } from "react-icons/bs";
 import product1 from '../../Componte/Assarts/Product/75 (1).jfif'
 import product2 from '../../Componte/Assarts/Product/75 (2).jfif'
 import product3 from '../../Componte/Assarts/Product/75 (3).jfif'
@@ -13,6 +13,7 @@ import product7 from '../../Componte/Assarts/Product/75.jfif'
 import product8 from '../../Componte/Assarts/Product/751.jfif'
 import SectionTitle from '../../Componte/SectionTitle/SectionTitle';
 import '../Home/Product/Product.css'
+import './AdvanceProduct.css'
 
 const AdvanceProduct = () => {
     return (
@@ -21,85 +22,64 @@ const AdvanceProduct = () => {
                 <SectionTitle title={'Our Products'} ></SectionTitle>
 
                 <div className="row">
-                <div className="col-lg-3 order-lg-first col-md-12 order-md-last mb-md-60px mb-lm-60px">
-                    <div className="shop-sidebar-wrap">
-                        <div className="sidebar-widget-search">
-                            <form id="widgets-searchbox" action="#">
-                                <input className="input-field" type="text" placeholder="Search"/>
-                                <button className="widgets-searchbox-btn" type="submit">
-                                    <i className="fa fa-search"></i>
-                                </button>
-                            </form>
-                        </div>
-                        <div className="sidebar-widget mt-8">
-                            <h4 className="sidebar-title">Price Filter</h4>
-                            <div className="price-filter">
-                                <div className="price-slider-amount">
-                                    <input type="text" id="amount" className="p-0 h-auto lh-1" name="price" placeholder="Add Your Price"/>
+                    <div className="col-lg-3 order-lg-first col-md-12 order-md-last mb-md-60px mb-lm-60px">
+                        <div className="shop-sidebar-wrap">
+                            <div className="sidebar-widget-search">
+                                <form id="widgets-searchbox" action="#">
+                                    <input className="input-field" type="text" placeholder="Search" />
+                                    <button className="widgets-searchbox-btn" type="submit">
+                                        <BsSearch></BsSearch>
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div className="sidebar-widget">
+                                <h4 className="sidebar-title">Category</h4>
+                                <div className="sidebar-widget-category">
+                                    <ul>
+                                        <li><a href="#" className="">Accesasories <span>(6)</span> </a></li>
+                                        <li><a href="#" className="">Computer <span>(4)</span> </a></li>
+                                        <li><a href="#" className="">Covid-19 <span>(2)</span> </a></li>
+                                        <li><a href="#" className="">Electronics <span>(6)</span> </a></li>
+                                        <li><a href="#" className="">Frame Sunglasses <span>(12)</span> </a></li>
+                                        <li><a href="#" className="">Furniture <span>(7)</span> </a></li>
+                                        <li><a href="#" className="">Genuine Leather <span>(9)</span> </a></li>
+                                    </ul>
                                 </div>
-                                <div id="slider-range" className="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div className="ui-slider-range ui-corner-all ui-widget-header" ></div><span tabindex="0" className="ui-slider-handle ui-corner-all ui-state-default" ></span><span tabindex="0" className="ui-slider-handle ui-corner-all ui-state-default" ></span></div>
                             </div>
-                        </div>
-                        <div className="sidebar-widget">
-                            <h4 className="sidebar-title">Category</h4>
-                            <div className="sidebar-widget-category">
-                                <ul>
-                                    <li><a href="#" className="selected m-0">Accesasories <span>(6)</span> </a></li>
-                                    <li><a href="#" className="">Computer <span>(4)</span> </a></li>
-                                    <li><a href="#" className="">Covid-19 <span>(2)</span> </a></li>
-                                    <li><a href="#" className="">Electronics <span>(6)</span> </a></li>
-                                    <li><a href="#" className="">Frame Sunglasses <span>(12)</span> </a></li>
-                                    <li><a href="#" className="">Furniture <span>(7)</span> </a></li>
-                                    <li><a href="#" className="">Genuine Leather <span>(9)</span> </a></li>
-                                </ul>
+                           
+                            <div className="sidebar-widget">
+                                <h4 className="sidebar-title">Size</h4>
+                                <div className="sidebar-widget-list size">
+                                    <ul>
+                                        <li><a className="active-2 gray" href="#">S</a></li>
+                                        <li><a className="gray" href="#">M</a></li>
+                                        <li><a className="gray" href="#">L</a></li>
+                                        <li><a className="gray" href="#">X</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div className="sidebar-widget">
-                            <h4 className="sidebar-title">Color</h4>
-                            <div className="sidebar-widget-list color">
-                                <ul>
-                                    <li><a className="active yellow" href="#"></a></li>
-                                    <li><a className="black" href="#"></a></li>
-                                    <li><a className="red" href="#"></a></li>
-                                    <li><a className="pink" href="#"></a></li>
-                                </ul>
+                            <div className="sidebar-widget tag">
+                                <h4 className="sidebar-title">Price Level</h4>
+                                <div className="shop-select">
+                                    <select className="shop-sort">
+                                        <option data-display="Relevance">Relevance</option>
+                                        <option value="1"> Low to high</option>
+                                        <option value="2"> High to low</option>
+                                    </select>
+
+                                </div>
                             </div>
-                        </div>
-                        <div className="sidebar-widget">
-                            <h4 className="sidebar-title">Size</h4>
-                            <div className="sidebar-widget-list size">
-                                <ul>
-                                    <li><a className="active-2 gray" href="#">S</a></li>
-                                    <li><a className="gray" href="#">M</a></li>
-                                    <li><a className="gray" href="#">L</a></li>
-                                    <li><a className="gray" href="#">XL</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="sidebar-widget tag">
-                            <h4 className="sidebar-title">Tags</h4>
-                            <div className="sidebar-widget-tag">
-                                <ul>
-                                    <li><a href="#">Fashion</a></li>
-                                    <li><a href="#">Organic</a></li>
-                                    <li><a href="#">Old Fashion</a></li>
-                                    <li><a href="#">Men</a></li>
-                                    <li><a href="#">Fashion</a></li>
-                                    <li><a href="#">Dress</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="sidebar-widget-image">
-                            <div className="single-banner">
-                                <img src="assets/images/banner/2.jpg" alt=""/>
-                                <div className="item-disc">
-                                    <h2 className="title">#bestsellers</h2>
-                                    <a href="single-product-variable.html" className="shop-link">Shop Now</a>
+                            <div className="sidebar-widget-image">
+                                <div className="single-banner">
+                                    <div className="item-disc">
+                                        <h2 className="title">Bestsellers</h2>
+                                        <a href="single-product-variable.html" className="shop-link">Shop Now</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                     <div className="col-md-8">
                         <div className="row">
                             <div className="col-md-12">
