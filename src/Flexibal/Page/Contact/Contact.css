@@ -1,0 +1,112 @@
+.contact-area{
+    padding: 100px 0;
+}
+
+.contact-wrapper {
+    -webkit-box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 7%);
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 7%);
+    padding: 70px;
+}
+
+.contact-wrapper .contact-info .single-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 30px 35px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+}
+
+.contact-wrapper .contact-info .single-contact .icon-box {
+    width: 70px;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: linear-gradient(-155deg, #fd3d6b 0%, #fd7863 98%, #f3dfe0 100%);
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.contact-wrapper .contact-info .single-contact + .single-contact {
+    margin-top: 30px;
+}
+
+.contact-form {
+    padding-left: 30px;
+}
+
+.contact-form .contact-title {
+    margin: 0 0 31px;
+}
+
+.contact-form .contact-title .title {
+    font-size: 30px;
+    color: #222121;
+    font-weight: 700;
+    margin: 0 0 14px;
+}
+
+.contact-form .contact-title p {
+    color: #404040;
+    line-height: 27px;
+}
+
+.contact-form .contact-form-style input, .contact-form .contact-form-style textarea {
+    background: transparent;
+    border: 1px solid #c1c1c1;
+    margin-bottom: 30px;
+    color: #474747;
+    font-size: 14px;
+    width: 100%;
+    padding: 13px;
+}
+
+.contact-form .contact-form-style textarea {
+    margin-bottom: 0;
+    height: 200px;
+}
+
+button.btn-btn-primary:hover {
+    background: black;
+}
+
+button.btn-btn-primary {
+    background: linear-gradient(155deg, #fd3f6b 0%, #fd7863 98%, #f3dfe0 100%);
+    border: none;
+    padding: 14px 23px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.gmap_canvas {
+    line-height: 0;
+}
+
+.gmap_canvas iframe {
+    overflow: hidden;
+    background: none !important;
+    height: 600px;
+    width: 100%;
+}

@@ -80,6 +80,10 @@ const Header = () => {
                                     <NavLink to={'/product'}>Product</NavLink>
                                     <NavLink to={'/singleProduct'}>Single Product</NavLink>
                                     <NavLink to={'/advanceProduct'}>Advance Product</NavLink>
+                                    <NavLink to={'/shop'}>Shop</NavLink>
+                                    <NavLink to={'/checkout'}>Checkout</NavLink>
+                                    <NavLink to={'/contact'}>Contact</NavLink>
+                                    <NavLink to={'/blog'}>Blog</NavLink>
 
                                 </Nav>
 
