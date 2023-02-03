@@ -1,5 +1,6 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
+import AddProduct from '../DashBorad/Seller/AddProduct/AddProduct';
 import About from '../Page/About/About';
 import AdvanceProduct from '../Page/AdvanceProduct/AdvanceProduct';
 import Blog from '../Page/Bloge/Blog';
@@ -68,6 +69,10 @@ const Route = createBrowserRouter([
             {
                 path:'/forget',
                 element:<ForgetPassword></ForgetPassword>
+            },
+            {
+                path:'/AddProduct',
+                element:<AddProduct></AddProduct>
             },
         ]
     }

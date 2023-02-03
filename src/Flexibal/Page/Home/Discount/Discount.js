@@ -5,7 +5,7 @@ const Discount = () => {
     return (
         <div className='deal-margin'>
             <div className="container ">
-                    <div className="deal-bg">
+                    <div className="deal-bg animate__animated animate__fadeInUp">
                         
                         <div className="row  align-items-center">
                             <div className="col-md-6">

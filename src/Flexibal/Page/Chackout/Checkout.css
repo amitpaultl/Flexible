@@ -14,7 +14,7 @@
     margin-bottom: 10px;
 }
 
-.billing-info-wrap .billing-info input {
+.billing-info-wrap .billing-info input , .billing-info-wrap textarea {
     background: transparent none repeat scroll 0 0;
     border: 1px solid #ebebeb;
     color: #474747;
@@ -23,7 +23,7 @@
     padding-right: 10px;
     width: 100%;
     outline: none;
-    height: 45px;
+    padding: 9px 15px;
 }
 
 .billing-info-wrap .billing-select select {

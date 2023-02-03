@@ -17,10 +17,7 @@ import { Link } from "react-router-dom";
 import { Tab, Tabs } from "react-bootstrap";
 import SectionTitle from "../../Componte/SectionTitle/SectionTitle";
 import ReletatProduct from "../../Componte/ReletatProduct/ReletatProduct";
-// import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
-import Zoom from "react-img-hover-zoom";
-// import InnerImageZoom from "react-inner-image-zoom";
-// import Zoom from 'react-img-zoom'
+
 
 const SingleProduct = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -31,59 +28,52 @@ const SingleProduct = () => {
                 <div className="row">
 
                     <div className="col-lg-5">
-                        <div className="product-slider">
-
-                            <Swiper
-                                style={{
-                                    "--swiper-navigation-color": "#fff",
-                                    "--swiper-pagination-color": "#fff",
-                                }}
-                                loop={true}
-                                spaceBetween={10}
-                                thumbs={{ swiper: thumbsSwiper }}
-                                modules={[FreeMode, Thumbs]}
-                                className="mySwiper2"
-                            >
-                                <SwiperSlide>
-
-                                    <Zoom
-                                        img="https://swiperjs.com/demos/images/nature-1.jpg"
-                                        zoomScale={3}
-                                        width={600}
-                                        height={600}
-                                        className='hover-img-product'
-                                    />
-
-                                    {/* <InnerImageZoom
-                                        src="https://swiperjs.com/demos/images/nature-1.jpg"
-                                        zoomSrc="https://swiperjs.com/demos/images/nature-1.jpg"
-                                        zoomType="hover"
-                                        zoomPreload={true}
-                                    /> */}
-                                </SwiperSlide>
-                                <SwiperSlide>
-
-
-                                    <Zoom
-                                        img="https://swiperjs.com/demos/images/nature-2.jpg"
-                                        zoomScale={3}
-                                        width={600}
-                                        height={600}
-                                    />
-
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <Zoom
-                                        img="https://swiperjs.com/demos/images/nature-3.jpg"
-                                        zoomScale={3}
-                                        width={600}
-                                        height={600}
-                                    />
-
-                                </SwiperSlide>
-
-                            </Swiper>
-                            {/* <Swiper
+                        {/* <div className="product-slider">
+                       
+                                <Swiper
+                                    style={{
+                                        "--swiper-navigation-color": "#fff",
+                                        "--swiper-pagination-color": "#fff",
+                                    }}
+                                    loop={true}
+                                    spaceBetween={10}
+                                    navigation={true}
+                                    thumbs={{ swiper: thumbsSwiper }}
+                                    modules={[FreeMode, Navigation, Thumbs]}
+                                    className="mySwiper2"
+                                >
+                                    <SwiperSlide>
+                                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                    </SwiperSlide>
+                                </Swiper>
+                                <Swiper
                                     onSwiper={setThumbsSwiper}
                                     loop={true}
                                     spaceBetween={10}
@@ -123,9 +113,10 @@ const SingleProduct = () => {
                                     <SwiperSlide>
                                         <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
                                     </SwiperSlide>
-                                </Swiper> */}
+                                </Swiper>
+                      
 
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-md-7">
                         <div className="product-details-content quickview-content">

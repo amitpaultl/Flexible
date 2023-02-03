@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import slider1 from '../../../Componte/Assarts/Image/slider-1.png'
 import slider2 from '../../../Componte/Assarts/Image/slider-2.png'
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper";
-
+import 'animate.css';
 import './Hero.css'
 // Import Swiper styles
 import 'swiper/css';
@@ -34,12 +34,12 @@ const Hero = () => {
                         <SwiperSlide>
                             <div className="row align-items-center">
                                 <div className="col-md-6">
-                                    <div className="hero-text">
+                                    <div className="hero-text animate__animated animate__bounceInUp">
                                         <div className="sc-jifHHV enBukJ slide-content"><h4 className="sc-gHfsNP ckkyHR">New Products</h4><h2 className="sc-dkAqVg hMBHNl">Flexible Chair</h2><p>Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna</p><Link color="white" className="sc-eFuaqX cBTZnj mt-4 mt-md-5" to={'/'}>Shop Now</Link></div>
                                     </div>
                                 </div>
                                 <div className="col-md-6">
-                                    <div className="img-area">
+                                    <div className="img-area animate__animated animate__bounceInUp">
                                         <img src={slider1} alt="" className='sliderImg' />
                                     </div>
                                 </div>
@@ -50,12 +50,12 @@ const Hero = () => {
                             <div className="row align-items-center">
 
                                 <div className="col-md-6">
-                                    <div className="hero-text">
+                                    <div className="hero-text animate__animated animate__bounceInUp">
                                         <div className="sc-jifHHV enBukJ slide-content"><h4 className="sc-gHfsNP ckkyHR">New Products</h4><h2 className="sc-dkAqVg hMBHNl">Creative Sofa</h2><p>Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna</p><Link color="white" className="sc-eFuaqX cBTZnj mt-4 mt-md-5" to={'/'}>Shop Now</Link></div>
                                     </div>
                                 </div>
                                 <div className="col-md-6">
-                                    <div className="img-area">
+                                    <div className="img-area animate__animated animate__bounceInUp">
                                         <img src={slider2} alt="" />
                                     </div>
                                 </div>
