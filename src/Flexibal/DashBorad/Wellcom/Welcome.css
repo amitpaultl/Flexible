@@ -1,0 +1,53 @@
+.menu-dashboard{
+    background-color: rgb(53, 51, 83);
+    height: 100%;
+    padding-top: 100px ;
+}
+
+.product-text-dash{
+    padding: 100px 0;
+}
+
+.menu-dashboard li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+.image-user{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center !important;
+    background-size: cover !important;
+    margin: auto;
+}
+
+.welcome h3 {
+    font-size: 35px;
+    color: #50ea16;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+
+.welcome{
+    text-align: center;
+}
+
+.dashboard .col-md-2{
+    padding: 0;
+}
+
+
+.menu-dashboard a {
+    padding-left: 22px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    
+}
+
+.menu-dashboard a:hover {
+    color: #e7931f;
+}

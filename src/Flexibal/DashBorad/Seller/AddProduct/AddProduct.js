@@ -5,7 +5,7 @@ import './AddProduct.css'
 const AddProduct = () => {
     return (
         <div>
-            <div className="checkout-area ">
+            <div className=" addProduct">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-7">

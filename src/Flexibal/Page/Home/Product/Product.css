@@ -292,3 +292,11 @@ span.badges span {
     color: orange;
     margin-right: 10px;
 }
+
+/* responsive css */
+
+@media (min-width: 10px) and (max-width: 552.98px) { 
+    .section-title-area p {
+        width: auto;
+    }
+}

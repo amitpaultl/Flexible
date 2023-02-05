@@ -170,3 +170,14 @@ a.company-name:hover {
     padding-bottom: 11px;
 }
 
+/* responsive css */
+
+@media (min-width: 50px) and (max-width: 768.98px) { 
+    .logo {
+        text-align: center;
+        margin-bottom: 23px;
+    }
+    .menu-icon {
+        justify-content: center;
+    }
+ }

@@ -22,6 +22,7 @@ const Shop = () => {
                                                 <th>Qty</th>
                                                 <th>Subtotal</th>
                                                 <th>Action</th>
+                                                <th>Pay</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -41,6 +42,13 @@ const Shop = () => {
                                                     <a href="#" className='edit'><AiTwotoneEdit></AiTwotoneEdit></a>
                                                     <a href="#" className='delete'><AiTwotoneDelete></AiTwotoneDelete></a>
                                                 </td>
+                                                <td className="product-subtotal">
+                                                    <Link>
+                                                    
+                                                        <span className='payment'>Pay</span>
+                                                    </Link>
+                                                </td>
+
                                             </tr>
                                             <tr>
                                                 <td className="product-thumbnail">

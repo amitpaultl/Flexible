@@ -22,7 +22,7 @@ const AdvanceProduct = () => {
                 <SectionTitle title={'Our Products'} ></SectionTitle>
 
                 <div className="row">
-                    <div className="col-lg-3 order-lg-first col-md-12 order-md-last mb-md-60px mb-lm-60px">
+                    <div className="col-lg-3 col-md-3">
                         <div className="shop-sidebar-wrap">
                             <div className="sidebar-widget-search">
                                 <form id="widgets-searchbox" action="#">
@@ -80,10 +80,10 @@ const AdvanceProduct = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-8 col-lg-8">
                         <div className="row">
                             <div className="col-md-12">
-                                <div className="shop-top-bar d-flex">
+                                <div className="shop-top-bar ">
                                     <p><span>12</span> Product Found of <span>30</span></p>
                                     <div className="shop-tab nav" role="tablist">
                                         <a className="active" href="#shop-grid">

@@ -68,7 +68,7 @@ const About = () => {
                 <div className="container">
                     <SectionTitle title={'Our Team'}></SectionTitle>
                     <div className="row">
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-3">
                       
                             <div class="team-wrapper">
                                 <div class="team-image overflow-hidden">
@@ -100,7 +100,7 @@ const About = () => {
                             </div>
                          
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-3">
                       
                             <div class="team-wrapper">
                                 <div class="team-image overflow-hidden">
@@ -132,7 +132,7 @@ const About = () => {
                             </div>
                          
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-3">
                       
                             <div class="team-wrapper">
                                 <div class="team-image overflow-hidden">
@@ -164,7 +164,7 @@ const About = () => {
                             </div>
                          
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6 col-lg-3">
                       
                             <div class="team-wrapper">
                                 <div class="team-image overflow-hidden">

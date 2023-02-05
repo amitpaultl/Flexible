@@ -1,6 +1,9 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
+import DashboardRoot from '../DashBorad/DashboardRoot';
 import AddProduct from '../DashBorad/Seller/AddProduct/AddProduct';
+import ShowProduct from '../DashBorad/Seller/ShowProduct/ShowProduct';
+import Welcome from '../DashBorad/Wellcom/Wellcome';
 import About from '../Page/About/About';
 import AdvanceProduct from '../Page/AdvanceProduct/AdvanceProduct';
 import Blog from '../Page/Bloge/Blog';
@@ -70,9 +73,33 @@ const Route = createBrowserRouter([
                 path:'/forget',
                 element:<ForgetPassword></ForgetPassword>
             },
+            
+        ]
+    },
+    {
+        path:'/dashboard',
+        // errorElement:<Error></Error>,
+        element:<DashboardRoot></DashboardRoot>,
+        children:[
             {
-                path:'/AddProduct',
+                path:'/dashboard',
+                element:<Welcome></Welcome>
+
+            },
+            {
+                path:'/dashboard/seller',
                 element:<AddProduct></AddProduct>
+
+            },
+            {
+                path:'/dashboard/showProduct',
+                element:<ShowProduct></ShowProduct>
+
+            },
+            {
+                path:'/dashboard/shopProduct',
+                element:<Shop></Shop>
+
             },
         ]
     }

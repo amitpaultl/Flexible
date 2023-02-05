@@ -16,7 +16,26 @@ const Testimonials = () => {
                     <div className="col-md-12">
                         <div className="testimonials">
                             <Swiper
-                                slidesPerView={3}
+                                breakpoints={{
+                                    // when window width is >= 640px
+                                    640: {
+
+                                        slidesPerView: 1,
+                                    },
+                                    // when window width is >= 768px
+                                    768: {
+
+                                        slidesPerView: 2,
+                                    },
+                                    1024: {
+
+                                        slidesPerView: 3,
+                                    },
+                                    1440: {
+
+                                        slidesPerView: 3,
+                                    },
+                                }}
                                 spaceBetween={30}
                                 navigation={true}
                                 modules={[Navigation]}
@@ -25,12 +44,12 @@ const Testimonials = () => {
                                 <SwiperSlide>
                                     <div className="testi-inner">
                                         <div className="reating-wrap">
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+
                                         </div>
                                         <div className="testi-content">
                                             <p>Lorem ipsum dolor sit amet, consect adipisici elit, sed do eiusmod tempol incididunt
@@ -51,12 +70,12 @@ const Testimonials = () => {
                                 <SwiperSlide>
                                     <div className="testi-inner">
                                         <div className="reating-wrap">
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+
                                         </div>
                                         <div className="testi-content">
                                             <p>Lorem ipsum dolor sit amet, consect adipisici elit, sed do eiusmod tempol incididunt
@@ -77,12 +96,12 @@ const Testimonials = () => {
                                 <SwiperSlide>
                                     <div className="testi-inner">
                                         <div className="reating-wrap">
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+
                                         </div>
                                         <div className="testi-content">
                                             <p>Lorem ipsum dolor sit amet, consect adipisici elit, sed do eiusmod tempol incididunt
@@ -103,12 +122,12 @@ const Testimonials = () => {
                                 <SwiperSlide>
                                     <div className="testi-inner">
                                         <div className="reating-wrap">
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+
                                         </div>
                                         <div className="testi-content">
                                             <p>Lorem ipsum dolor sit amet, consect adipisici elit, sed do eiusmod tempol incididunt
@@ -129,12 +148,12 @@ const Testimonials = () => {
                                 <SwiperSlide>
                                     <div className="testi-inner">
                                         <div className="reating-wrap">
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+
                                         </div>
                                         <div className="testi-content">
                                             <p>Lorem ipsum dolor sit amet, consect adipisici elit, sed do eiusmod tempol incididunt
@@ -155,12 +174,12 @@ const Testimonials = () => {
                                 <SwiperSlide>
                                     <div className="testi-inner">
                                         <div className="reating-wrap">
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            <AiFillStar/>
-                                            
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+                                            <AiFillStar />
+
                                         </div>
                                         <div className="testi-content">
                                             <p>Lorem ipsum dolor sit amet, consect adipisici elit, sed do eiusmod tempol incididunt
@@ -178,7 +197,7 @@ const Testimonials = () => {
                                         </div>
                                     </div>
                                 </SwiperSlide>
-                                
+
                             </Swiper>
                         </div>
                     </div>

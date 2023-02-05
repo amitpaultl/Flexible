@@ -1,4 +1,3 @@
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -67,8 +66,8 @@
 }
 
 .img-area img {
-  width: auto;
-  height: 449px;
+  width: 100%;
+  height: auto;
 }
 
 .slider-part {
@@ -76,10 +75,32 @@
   padding: 100px 0;
 }
 
-.slider-part .swiper-button-next, .slider-part .swiper-button-prev{
+.slider-part .swiper-button-next,
+.slider-part .swiper-button-prev {
   color: black;
 }
 
 .slider-part .swiper-pagination-bullet-active {
   background: rgb(255, 112, 4);
+}
+
+@media (min-width: 68px) and (max-width: 991.98px) {
+  .hMBHNl {
+    font-size: 30px;
+  }
+
+  .cBTZnj {
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 68px) and (max-width: 767.98px) {
+  .img-area {
+    display: none;
+  }
+
+ .slider-part .swiper-pagination {
+   
+    display: none;
+}
 }

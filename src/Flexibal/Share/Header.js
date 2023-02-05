@@ -12,15 +12,7 @@ const Header = () => {
     // context
     const { user, logOut } = useContext(AuthProvider)
 
-    // logout
-    const singOut = () => {
-        logOut()
-            .then(() => {
-                // Sign-out successful.
-            }).catch((error) => {
-                // An error happened.
-            });
-    }
+
    
     return (
         <div>
@@ -39,9 +31,12 @@ const Header = () => {
                             <div className="menu-icon">
                                 {
                                     user?.email ? <div className="icon">
-                                        {
-                                            user?.photoURL ? <img className='user-image' src={user.photoURL} alt="" /> : <Link><FiUser></FiUser></Link>
-                                        }
+                                        <Link to={'/dashboard'}>
+                                        
+                                            {
+                                                user?.photoURL ? <img className='user-image' src={user.photoURL} alt="" /> : <Link><FiUser></FiUser></Link>
+                                            }
+                                        </Link>
 
 
                                     </div> : <div className="icon">
@@ -49,9 +44,7 @@ const Header = () => {
                                     </div>
                                 }
 
-                                <div className="icon">
-                                    <Link onClick={singOut}><FiLogIn></FiLogIn></Link>
-                                </div>
+                                
                                 <div className="icon">
                                     <Link><FiShoppingCart></FiShoppingCart></Link>
                                 </div>

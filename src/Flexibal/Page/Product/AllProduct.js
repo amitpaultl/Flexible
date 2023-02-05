@@ -22,7 +22,7 @@ const AllProduct = () => {
 
                 <div className="row">
                     <div className="col-md-12">
-                        <div className="shop-top-bar d-flex">
+                        <div className="shop-top-bar ">
                             <p><span>12</span> Product Found of <span>30</span></p>
                             <div className="shop-tab nav" role="tablist">
                                 <a className="active" href="#shop-grid">

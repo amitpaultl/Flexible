@@ -333,3 +333,30 @@
     background-color: #000000;
     color: #fff;
 }
+
+span.payment:hover {
+    background: #05da1acf;
+}
+span.payment {
+    background: #000000;
+    padding: 9px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+span.No-sell {
+    color: red;
+    font-weight: 600;
+}
+
+span.publish-btu {
+    background: #605d5d;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}

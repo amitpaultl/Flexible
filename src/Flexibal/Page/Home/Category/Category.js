@@ -23,7 +23,26 @@ const Category = () => {
                     <div className="col-md-12">
                         <div className="category-area">
                             <Swiper
-                                slidesPerView={4}
+                                breakpoints={{
+                                    // when window width is >= 640px
+                                    640: {
+
+                                        slidesPerView: 1,
+                                    },
+                                    // when window width is >= 768px
+                                    768: {
+
+                                        slidesPerView: 2,
+                                    },
+                                    1024: {
+
+                                        slidesPerView: 3,
+                                    },
+                                    1440: {
+
+                                        slidesPerView: 4,
+                                    },
+                                }}
                                 spaceBetween={30}
                                 pagination={{
                                     clickable: true,
